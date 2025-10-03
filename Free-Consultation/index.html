@@ -1,0 +1,116 @@
+<!-- Combined Intro + Form + What to Expect -->
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 20px 0 20px; font-family: 'Helvetica Neue', sans-serif; color: #2e2e2e;">
+
+
+  <!-- Responsive Flex Layout -->
+ <div style="display: flex; flex-wrap: wrap; align-items: stretch; justify-content: center; gap: 20px; padding: 0;">
+
+    
+    <!-- Text Block -->
+    <div class="form-intro-block" style="flex: 1 1 500px; padding: 0;">
+      <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 18px;">
+        <span class="headline-line">Explore your options.</span>
+        <span class="headline-line">Ask questions.</span>
+        <span class="headline-line">No pressure.</span>
+      </h2>
+
+      <p style="font-size: 17px; line-height: 1.6; margin-bottom: 14px;">
+        Fill out the form below — a provider will reach out <strong>within 24 hours</strong>.
+      </p>
+      <p style="font-size: 17px; line-height: 1.6;">
+        Ready to get started now?  
+        <a href="https://www.mtnhlth.com/get-started" style="color: #0066cc; text-decoration: underline; font-weight: 500;">Book your first visit</a> and skip the consult.
+      </p>
+    </div>
+
+
+  </div>
+
+  <!-- Consultation Form -->
+  <section class="form-section">
+  <div class="form-card">
+  <div class="custom-form-container" style="padding: 15px 0;">
+   <form id="consult-form" action="https://script.google.com/macros/s/AKfycbybNYewl6-wVq88-2aH1MW-xqAQbN1C_c1rBtg0TP3KHXe3znFM58qegN8H8yStTE4n/exec" method="POST">
+      <label>Full Name</label>
+      <input type="text" name="name" required>
+
+      <label>Email</label>
+      <input type="email" name="email" required>
+
+      <label>Phone Number</label>
+      <input type="tel" name="phone" required>
+
+      <label>What is your age?</label>
+      <input type="number" name="age" required>
+
+<label>What state are you located in?</label>
+<select id="state-select" name="state" required>
+  <option value="">Select a state</option>
+  <option value="Utah">Utah</option>
+  <option value="Washington">Washington</option>
+  <option value="Other">Other</option>
+</select>
+
+
+<div id="state-other-input" class="hidden">
+  <label>Please enter your state</label>
+  <input type="text" name="state_other" id="state-other-text">
+</div>
+
+
+      <label>Briefly tell us what you're looking for</label>
+      <textarea name="message" rows="4" required></textarea>
+
+      <label>How did you hear about us?</label>
+<select id="referral-select" name="referral" required>
+  <option value="">Select an option</option>
+  <option value="Google">Google</option>
+  <option value="Friend/Referral">Friend/Referral</option>
+  <option value="Social Media">Social Media</option>
+  <option value="Window Sign">Saw our window sign</option>
+  <option value="Other">Other</option>
+</select>
+
+      <div id="referral-extra" class="hidden">
+        <label id="referral-extra-label">Please specify:</label>
+        <input type="text" name="referral_detail">
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="success-message" class="form-success-message hidden">
+      ✅ Thank you! Keep an eye out for a text from our medical provider at <strong>(801) 823-4158</strong> — they’ll be reaching out shortly.
+    </div>
+  </div>
+  </div>
+  </section>
+
+
+
+
+
+
+
+
+  <!-- What to Expect Section -->
+  <div style="padding: 15px 0;">
+    <h2 style="text-align: center; font-size: 30px; font-weight: 700; margin-bottom: 24px;">
+      What to Expect
+    </h2>
+    <p>
+      At MTN HLTH, we offer a <strong>free phone consultation</strong> to help you determine if our services align with your health goals. This no-pressure call connects you with a <strong>licensed medical provider</strong> to review your symptoms, health history, and what you’re hoping to achieve.
+    </p>
+    <p>
+      Whether you're interested in <strong>medical weight loss</strong>, <strong>hormone replacement therapy</strong>, or <strong>testosterone optimization</strong>, this conversation helps us understand your goals and explain how our care works. You'll get a feel for our <strong>functional, personalized approach</strong>—centered on real outcomes, <strong>not one-size-fits-all protocols</strong>.
+    </p>
+    <p>
+      Based in <strong>Utah</strong>, MTN HLTH specializes in lifestyle-driven care for both men and women. We combine clinical insight with a whole-person mindset to support long-term results.
+    </p>
+    <p>
+      If you’re ready to move forward, you can skip the consult and 
+      <a href="https://www.mtnhlth.com/get-started" style="color: #0066cc; font-weight: 500; text-decoration: underline;">schedule your initial visit now</a>. 
+      Your visit includes lab work, a full provider consultation, and a personalized care plan.
+    </p>
+  </div>
+</div>
